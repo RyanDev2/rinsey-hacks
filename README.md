@@ -9,6 +9,10 @@ Customizable Hacking Practise Script for FiveM (QBCore & QBox)
 
 🔹 Compatible with QBCore, QBox
 
+## Preview
+
+![](https://r2.fivemanage.com/g2zY7WwGCmX44h9Dwz0fX/images/rinseyhacks.png)
+
 BL_UI
 https://github.com/Byte-Labs-Studio/bl_ui
 
@@ -17,6 +21,10 @@ https://github.com/overextended/ox_lib
 
 Ox_target
 https://github.com/overextended/ox_target
+
+MLO USED
+
+https://www.youtube.com/watch?v=-3ihmq3guAM
 
 
 
