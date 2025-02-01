@@ -1,4 +1,4 @@
-FIRST EVER RELEASED RESOURCE
+# FIRST EVER RELEASED RESOURCE
 
 Hacking Practise Minigame
 Customizable Hacking Practise Script for FiveM (QBCore & QBox)
