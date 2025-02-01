@@ -3,6 +3,8 @@
 Hacking Practise Minigame
 Customizable Hacking Practise Script for FiveM (QBCore & QBox)
 
+I plan to change this in the future and make it more advanced this is just the start for me
+
 🔹 Easily integrate any minigame into your hacking system!
 
 🔹 Supports bl_ui as the default minigames
