@@ -5,6 +5,9 @@ Customizable Hacking System for FiveM (QBCore & QBox)
 🔹 Supports bl_ui as the default minigames
 🔹 Compatible with QBCore, QBox
 
+BL_UI
+https://github.com/Byte-Labs-Studio/bl_ui
+
 📌 Features
 
 ✔ Customizable Minigames – Use bl_ui or add your own minigames easily.
