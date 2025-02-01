@@ -16,12 +16,7 @@ https://github.com/overextended/ox_lib
 Ox_target
 https://github.com/overextended/ox_target
 
-📌 Features
 
-✔ Customizable Minigames – Use bl_ui or add your own minigames easily.
 
-✔ Configurable Difficulty – Adjust grid sizes, timers, and mechanics.
-
-✔ Supports Multiple Minigame Types – Word puzzles, number sequences, pin cracking, and more!
 
 
