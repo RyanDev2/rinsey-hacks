@@ -11,7 +11,7 @@ Customizable Hacking Practise Script for FiveM (QBCore & QBox)
 
 ## Preview
 
-![](https://r2.fivemanage.com/g2zY7WwGCmX44h9Dwz0fX/images/rinseyhacks.png)
+![](https://r2.fivemanage.com/g2zY7WwGCmX44h9Dwz0fX/images/hacks.png)
 
 BL_UI
 https://github.com/Byte-Labs-Studio/bl_ui
