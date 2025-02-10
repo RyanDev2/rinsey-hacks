@@ -22,19 +22,19 @@ local minigames = {
 }
 
 Citizen.CreateThread(function()
-    exports.ox_target:addBoxZone({
+    exports.interact:AddInteraction({
         coords = Config.Target.coords,
-        size = Config.Target.size,
-        rotation = Config.Target.rotation,
+        distance = Config.Target.distance or 8.0, 
+        interactDst = 1.0, 
+        id = 'minigame_menu', 
+        name = 'Minigames',
         options = {
             {
-                name = "minigame_menu",
-                label = "Open Minigames",
-                icon = "fas fa-gamepad",
-                distance = Config.Target.distance,
-                onSelect = function()
-                    TriggerEvent("minigame:openMenu") 
-                end
+                label = 'Open Minigames',
+                action = function(entity, coords, args)
+                    TriggerEvent("minigame:openMenu")
+                end,
+                icon = "fas fa-gamepad", 
             }
         }
     })
