@@ -1,15 +1,12 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'Rinsey'
-description 'Rinsey Cool Resource?'
+ui_page 'ui/tablet.html'
 
-shared_scripts { '@ox_lib/init.lua', 'config.lua'}
-
-
-client_scripts {
-    'client.lua',
+files {
+    'ui/tablet.html',
+    'ui/tablet.css',
+    'ui/tablet.js',
 }
 
-
-lua54 'yes'
+client_script 'client.lua'

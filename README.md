@@ -1,32 +1,13 @@
 # FIRST EVER RELEASED RESOURCE
 
-Hacking Practise Minigame
-Customizable Hacking Practise Script for FiveM (QBCore & QBox)
+This is the first resource I originally created using OXLIB, but it has now been rebuilt with a custom UI. This release represents the initial iteration of my work with user interfaces, and it is triggered by a command. Please note that this is not a finished resource, but rather an early version showcasing my progress in UI development.
 
-I plan to change this in the future and make it more advanced this is just the start for me
+GLITCH MINIGAMES
+https://forum.cfx.re/t/glitch-minigames-standalone/5319159
 
-🔹 Easily integrate any minigame into your hacking system!
 
-🔹 Supports bl_ui as the default minigames
 
-🔹 Compatible with QBCore, QBox
 
-## Preview
-
-![](https://r2.fivemanage.com/g2zY7WwGCmX44h9Dwz0fX/images/hacks.png)
-
-BL_UI
-https://github.com/Byte-Labs-Studio/bl_ui
-
-Ox_lib
-https://github.com/overextended/ox_lib
-
-Interact
-[https://github.com/overextended/ox_target](https://github.com/darktrovx/interact)
-
-MLO USED
-
-https://www.youtube.com/watch?v=-3ihmq3guAM
 
 
 

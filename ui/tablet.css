@@ -1,0 +1,375 @@
+:root {
+  --main-color: #181c24;
+  --border-color: #3a3f4b;
+  --accent-color: #4e9cff;
+  --input-bg: #232837;
+  --suggestion-bg: #232837;
+  --alert-bg: #1a1e28e6;
+  --prefix-bg: #4e9cff22;
+  --param-color: #ffe066;
+  --help-color: #b0b8c9a1;
+  --tablet-width: 800px;
+  --tablet-height: 500px;
+  --tablet-radius: 24px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Fira Code', 'JetBrains Mono', 'Consolas', 'Segoe UI', Arial, sans-serif !important;
+  background: transparent;
+}
+
+/* Tablet Styles */
+#tablet-bg {
+  position: fixed;
+  inset: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+#tablet-frame {
+  width: var(--tablet-width);
+  height: var(--tablet-height);
+  background: #111;
+  border-radius: var(--tablet-radius);
+  box-shadow: 0 8px 48px #000a;
+  overflow: hidden;
+  position: relative;
+  border: 6px solid #222;
+  display: flex;
+  flex-direction: column;
+}
+
+#tablet-statusbar {
+  height: 32px;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+  font-size: 1.1rem;
+  background: rgba(0,0,0,0.18);
+  z-index: 2;
+}
+
+#tablet-wallpaper {
+  flex: 1;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80') center center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tablet-lock {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 2px 8px #000a;
+  position: absolute;
+  top: 30%;
+}
+
+#tablet-clock {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+#tablet-date {
+  font-size: 1.3rem;
+  margin-bottom: 2.5rem;
+}
+
+#tablet-unlock {
+  font-size: 2.2rem;
+  background: rgba(0,0,0,0.3);
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  cursor: pointer;
+  border: 2px solid #fff2;
+  transition: background 0.2s;
+}
+#tablet-unlock:hover {
+  background: rgba(0,0,0,0.5);
+}
+
+/* Minigame App Window */
+#app-container {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  background: rgba(24,28,34,0.92);
+}
+
+#minigame-app {
+  width: 90%;
+  height: 80%;
+  background: rgba(24,26,34,0.98);
+  border-radius: 18px;
+  margin: 30px auto;
+  box-shadow: 0 4px 24px #0006;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 2px solid var(--accent-color);
+}
+
+#minigame-header {
+  padding: 18px;
+  font-size: 1.5rem;
+  color: #fff;
+  background: #23243a;
+  border-bottom: 1.5px solid var(--accent-color);
+  text-align: center;
+  font-weight: bold;
+}
+
+#minigame-list {
+  flex: 1;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 18px;
+  padding: 24px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-color) #23243a;
+}
+#minigame-list::-webkit-scrollbar {
+  width: 8px;
+}
+#minigame-list::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 6px;
+}
+#minigame-list::-webkit-scrollbar-track {
+  background: #23243a;
+}
+
+/* Desktop App Icon (Tablet & Laptop) */
+.desktop-app {
+  background: #23243a;
+  border: 2px solid #35374a;
+  border-radius: 8px;
+  width: 180px;
+  height: 180px;
+  min-width: 180px;
+  min-height: 180px;
+  max-width: 220px;
+  max-height: 220px;
+  padding: 18px 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(60,60,60,0.10);
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s, border 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  word-break: break-word;
+  white-space: normal;
+  overflow: hidden;
+}
+.desktop-app:hover {
+  background: #35374a;
+  transform: scale(1.04);
+  border: 2px solid var(--accent-color);
+}
+.desktop-app i {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: var(--accent-color);
+}
+.desktop-app .app-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #e0e0e0;
+  margin-top: 4px;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  line-height: 1.2;
+  word-break: break-word;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+.desktop-app .app-desc {
+  font-size: 0.92rem;
+  color: #b0b0b0;
+  margin-top: 6px;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  line-height: 1.2;
+  word-break: break-word;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+/* Laptop Styles */
+#laptop-bg {
+  position: fixed;
+  inset: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  display: none;
+}
+
+#laptop-frame {
+  width: 800px;
+  height: 520px;
+  background: #23243a;
+  border-radius: 32px 32px 18px 18px;
+  box-shadow: 0 24px 64px 0 rgba(0,0,0,0.65), 0 2px 0 #181920;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 10px solid #181920;
+  position: relative;
+}
+
+#laptop-screen {
+  width: 760px;
+  height: 400px;
+  background: #181920;
+  border-radius: 24px 24px 12px 12px;
+  margin: 24px auto 0 auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#laptop-wallpaper {
+  position: absolute;
+  inset: 0;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80') center center/cover no-repeat;
+  filter: blur(6px) brightness(0.5);
+  z-index: 1;
+}
+
+#laptop-window {
+  width: 420px;
+  height: 320px;
+  background: rgba(24, 26, 34, 0.98);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.45), 0 1.5px 0 #222;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 2.5px solid #4e8cff;
+  animation: popin 0.4s cubic-bezier(.68,-0.55,.27,1.55);
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes popin {
+  0% { transform: scale(0.8) translate(-50%, -40%); opacity: 0; }
+  100% { transform: scale(1) translate(-50%, -50%); opacity: 1; }
+}
+
+#window-header {
+  background: #23243a;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  border-bottom: 2px solid #181920;
+}
+
+.window-controls {
+  display: flex;
+  gap: 8px;
+  margin-right: 16px;
+}
+
+.window-btn {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 2px;
+  border: none;
+}
+.window-btn.close { background: #ff5f56; cursor: pointer; }
+.window-btn.minimize { background: #ffbd2e; }
+.window-btn.maximize { background: #27c93f; }
+
+.window-title {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  font-weight: 600;
+  flex: 1;
+  text-align: center;
+  letter-spacing: 0.5px;
+  user-select: none;
+}
+
+#window-content {
+  flex: 1;
+  background: linear-gradient(120deg, #23243a 60%, #181920 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 32px 24px;
+  position: relative;
+}
+
+#desktop-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+#notification {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 220px;
+  background: #23243a;
+  border-radius: 8px;
+  padding: 14px 24px;
+  box-shadow: 0 2px 12px 0 rgba(78,140,255,0.08);
+  border: 2px solid #35374a;
+  font-size: 1.05rem;
+  color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 20;
+}
+#notification.success { border-left: 6px solid #27c93f; }
+#notification.error { border-left: 6px solid #ff5f56; }
+
+#laptop-base {
+  width: 320px;
+  height: 32px;
+  background: #23243a;
+  border-radius: 0 0 24px 24px;
+  margin: 0 auto;
+  margin-top: -8px;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.25);
+}
