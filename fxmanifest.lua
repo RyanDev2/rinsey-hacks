@@ -1,6 +1,9 @@
 fx_version 'cerulean'
 game 'gta5'
 
+author 'Rinsey'
+description 'A standalone resource for a customizable tablet interface with various features.'
+
 ui_page 'ui/tablet.html'
 
 files {

@@ -9,28 +9,28 @@
 <body>
   <div id="tablet-bg">
     <div id="tablet-frame">
-      <div id="tablet-statusbar">
-        <span id="tablet-time">11:27</span>
-        <span id="tablet-icons">
-          <i class="fas fa-signal"></i>
-          <i class="fas fa-wifi"></i>
-        </span>
-      </div>
-      <div id="tablet-wallpaper">
-        <div id="tablet-lock">
-          <div id="tablet-clock">11:27</div>
-          <div id="tablet-date">lunes, 18 de abril de 2022</div>
-          <div id="tablet-unlock"><i class="fas fa-lock"></i></div>
+      <div id="app-header">
+        <div id="app-title">
+          <i class="fas fa-gamepad"></i>
+          Minigames Hub
+        </div>
+        <div id="app-controls">
+          <button class="control-btn close" id="close-btn"></button>
+          <button class="control-btn minimize"></button>
+          <button class="control-btn maximize"></button>
         </div>
       </div>
-      <div id="app-container" style="display:none;">
-        <div id="minigame-app">
-          <div id="minigame-header">Minigames</div>
+      
+      <div id="minigame-app">
+        <div id="minigame-content">
           <div id="minigame-list"></div>
         </div>
       </div>
+      
+      <div id="notification"></div>
     </div>
   </div>
+
   <script src="tablet.js"></script>
 </body>
 </html>
